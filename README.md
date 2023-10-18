@@ -20,9 +20,9 @@ If you have any questions on this repository or the related paper, feel free to 
 ## Introduction
 After discovering that Language Models (LMs) can be good in-context few-shot learners, numerous strategies have been proposed to optimize in-context sequence configurations. Recently, researchers in Vision-Language (VL) domains also develop their few-shot learners, while they only use the simplest way, e.g., randomly sampling, to configure in-context image-text pairs. In order to explore the effects of varying configurations on VL in-context learning, we devised four strategies for image selection and four for caption assignment to configure in-context image-text pairs for image captioning. Here Image Captioning is used as the case study since it can be seen as the  visually-conditioned LM. Our comprehensive experiments yield two counter-intuitive but valuable insights, highlighting the distinct characteristics of VL in-context learning due to multi-modal synergy, as compared to the NLP case.
 
-<p align="center">
-    <img src="doc/intro.bmp"/>
-</p>
+
+![My SVG Image](doc/intro.svg)
+
 
 > Figure: The distinction between LM and VLMs as few-shot learners. LM generally excel with examples akin to the test case (blue blocks in (a)). In contrast, for VLMs, the performance is not strictly correlated with image similarity but heavily relies on the caption quality. For instance, when low-quality captions are used, similar images (d) lead to worse performance than dissimilar ones (f) since VLMs may build a short-cut by reusing in-context captions without seeing the given images.
 
@@ -34,6 +34,8 @@ conda create -n of python=3.9
 pip install -r requirements.txt
 pip install -e .
 ```
+
+Download the OpenFlamingo v1 9B model from [link](https://huggingface.co/openflamingo/OpenFlamingo-9B-deprecated) and then download the LLaMA model from [link](https://huggingface.co/decapoda-research/llama-7b-hf).
 
 ## Datasets
 
