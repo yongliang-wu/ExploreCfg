@@ -1,0 +1,17 @@
+einops
+einops-exts
+transformers==4.29
+torch
+torchvision
+pillow
+more-itertools
+datasets
+braceexpand
+webdataset
+wandb
+nltk
+scipy
+inflection
+sentencepiece
+open_clip_torch
+pycocoevalcap
