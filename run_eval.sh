@@ -20,7 +20,6 @@ python open_flamingo/eval/evaluate.py \
     --mgc_path  "MGC/wc_vis_135.json"\
     --mgca_path  "MGCA-idx/best_gt_WC(135).json"\
     --clip_ids_path "train_set_clip.json"
-
     --results_file $RESULTS_FILE \
     --num_samples 5000 --shots 4 8 16 32 --num_trials 1 --seed 5 --batch_size 8\
     --cross_attn_every_n_layers 4\

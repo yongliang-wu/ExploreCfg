@@ -1,4 +1,4 @@
-# Exploring Diverse In-Context Configurations for Image Captioning
+# \[NeurIPS2023\] Exploring Diverse In-Context Configurations for Image Captioning
 [![LICENSE](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/y2l/meta-transfer-learning-tensorflow/blob/master/LICENSE)
 [![Python](https://img.shields.io/badge/python-3.9-blue.svg?style=flat-square&logo=python&color=3776AB)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/pytorch-2.0.1-%237732a8?style=flat-square&logo=PyTorch&color=EE4C2C)](https://pytorch.org/)
@@ -12,7 +12,6 @@ If you have any questions on this repository or the related paper, feel free to 
 * [Introduction](#introduction)
 * [Getting Started](#getting-started)
 * [Datasets](#datasets)
-* [Performance](#performance)
 * [Citation](#citation)
 * [Acknowledgements](#acknowledgements)
 
@@ -37,6 +36,26 @@ pip install -e .
 
 Download the OpenFlamingo v1 9B model from [link](https://huggingface.co/openflamingo/OpenFlamingo-9B-deprecated) and then download the LLaMA model from [link](https://huggingface.co/decapoda-research/llama-7b-hf).
 
+You can run the following command to validate the model. See run_eval.sh for more details.
+
+```bash
+python open_flamingo/eval/evaluate.py \
+    --lm_path $LM_PATH \
+    --lm_tokenizer_path $LM_TOKENIZER_PATH \
+    --checkpoint_path $CKPT_PATH \
+    --device $DEVICE \
+    --coco_image_dir_path $COCO_IMG_PATH \
+    --coco_annotations_json_path $COCO_ANNO_PATH \
+    --mgc_path  "MGC/wc_vis_135.json"\
+    --mgca_path  "MGCA-idx/best_gt_WC(135).json"\
+    --clip_ids_path "train_set_clip.json"
+    --results_file $RESULTS_FILE \
+    --num_samples 5000 --shots 4 8 16 32 --num_trials 1 --seed 5 --batch_size 8\
+    --cross_attn_every_n_layers 4\
+    --eval_coco
+```
+
+
 ## Datasets
 
 
@@ -51,7 +70,7 @@ Please cite our paper if it is helpful to your work:
 ```bibtex
 @article{yang2023exploring,
   title={Exploring Diverse In-Context Configurations for Image Captioning},
-  author={Yang, Xu and Wu, Yongliang and Yang, Mingzhuo and Chen, Haokun},
+  author={Yang, Xu and Wu, Yongliang and Yang, Mingzhuo and Chen, Haokun and Xin, Geng},
   journal={arXiv preprint arXiv:2305.14800},
   year={2023}
 }
