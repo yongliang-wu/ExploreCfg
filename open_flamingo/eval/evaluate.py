@@ -246,9 +246,8 @@ def sample_batch_demos_from_query_set(query_set, num_samples, batch, clip = Fals
         output = []
         for i in range(len(batch)):
             o = []
-            for j, id in enumerate(batch[i]["clip_image_ids"][:num_samples]):
+            for id in batch[i]["clip_image_ids"][:num_samples]:
                 x = copy.deepcopy(query_set.id2item(id))
-                x['captions'] = [query_set[0]["captions"][j]]
                 o.append(x)
             output.append(o)
         return output

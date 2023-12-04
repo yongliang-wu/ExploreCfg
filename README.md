@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/python-3.9-blue.svg?style=flat-square&logo=python&color=3776AB)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/pytorch-2.0.1-%237732a8?style=flat-square&logo=PyTorch&color=EE4C2C)](https://pytorch.org/)
 
-This repository contains the PyTorch implementation for the NeurIPS 2023 Paper ["Exploring Diverse In-Context Configurations for Image Captioning"](https://nips.cc/virtual/2023/poster/71057) by [Xu Yang](https://yangxuntu.github.io/), Yongliang Wu, Mingzhuo Yang, Haokun Chen and Xin Geng.
+This repository contains the PyTorch implementation for the NeurIPS 2023 Paper ["Exploring Diverse In-Context Configurations for Image Captioning"](https://nips.cc/virtual/2023/poster/71057) by [Xu Yang](https://yangxuntu.github.io/), Yongliang Wu, Mingzhuo Yang, Haokun Chen and [Xin Geng](https://palm.seu.edu.cn/xgeng/).
 
 If you have any questions on this repository or the related paper, feel free to create an issue. 
 
