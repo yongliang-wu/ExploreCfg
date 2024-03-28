@@ -79,7 +79,7 @@ Please cite our paper if it is helpful to your work:
 ## TODO
 1. Add the implement of Model-Generated Captions
 2. Add the implement of Model-Generated Captions as Anchors
-3. Add the implement of Similarity-based Image-ImageRetrieval, Similarity-basedImage-Caption Retrieval and Diversity-based Image-Image Retrieval
+3. Add the implement of Similarity-based Image-Caption Retrieval and Diversity-based Image-Image Retrieval
 
 ## Acknowledgements
 
