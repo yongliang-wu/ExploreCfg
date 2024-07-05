@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/python-3.9-blue.svg?style=flat-square&logo=python&color=3776AB)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/pytorch-2.0.1-%237732a8?style=flat-square&logo=PyTorch&color=EE4C2C)](https://pytorch.org/)
 
-This repository contains the PyTorch implementation for the NeurIPS 2023 Paper ["Exploring Diverse In-Context Configurations for Image Captioning"](https://nips.cc/virtual/2023/poster/71057) by [Xu Yang](https://yangxuntu.github.io/), Yongliang Wu, Mingzhuo Yang, Haokun Chen and [Xin Geng](https://palm.seu.edu.cn/xgeng/).
+This repository contains the PyTorch implementation for the NeurIPS 2023 Paper ["Exploring Diverse In-Context Configurations for Image Captioning"](https://nips.cc/virtual/2023/poster/71057) by [Xu Yang](https://yangxuntu.github.io/), [Yongliang Wu](https://yongliang-wu.github.io/), Mingzhuo Yang, Haokun Chen and [Xin Geng](https://palm.seu.edu.cn/xgeng/).
 
 If you have any questions on this repository or the related paper, feel free to create an issue. 
 
@@ -68,11 +68,16 @@ COCO is a large-scale object detection, segmentation, and captioning dataset. Fo
 Please cite our paper if it is helpful to your work:
 
 ```bibtex
-@article{yang2023exploring,
-  title={Exploring Diverse In-Context Configurations for Image Captioning},
-  author={Yang, Xu and Wu, Yongliang and Yang, Mingzhuo and Chen, Haokun and Xin, Geng},
-  journal={arXiv preprint arXiv:2305.14800},
-  year={2023}
+@inproceedings{NEURIPS2023_804b5e30,
+ author = {Yang, Xu and Wu, Yongliang and Yang, Mingzhuo and Chen, Haokun and Geng, Xin},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
+ pages = {40924--40943},
+ publisher = {Curran Associates, Inc.},
+ title = {Exploring Diverse In-Context Configurations for Image Captioning},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/804b5e300c9ed4e3ea3b073f186f4adc-Paper-Conference.pdf},
+ volume = {36},
+ year = {2023}
 }
 ```
 
